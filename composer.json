@@ -1,0 +1,23 @@
+{
+    "name": "ecis/alarm",
+    "description": "Ecis Hook",
+    "keywords": ["ecis", "alarm"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shin Hyosik",
+            "email": "hyosik@ecis.co.kr"            
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "guzzlehttp/guzzle": "~6.2",
+        "guzzlehttp/psr7": "~1.1",
+        "guzzlehttp/promises": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ecis\\Alarm\\": "src/EcisAlarm"
+        }
+    }
+}
