@@ -1,5 +1,5 @@
 {
-    "name": "ecis/alarm",
+    "name": "ecis/EcisAlarm",
     "description": "Ecis Hook",
     "keywords": ["ecis", "alarm"],
     "license": "MIT",
