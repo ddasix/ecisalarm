@@ -6,14 +6,13 @@ use GuzzleHttp\Client;
 
 class EcisAlarm {
 	protected $defaults = [
-		'reciever'	=> '',
-		'data'		=> []
+		'reciever'      => '',
+		'data'          => []
 	];
-	
+
 	public function __construct(array $data, $reciever){
-		$defaults = $this->defaults;
-		$defaults['reciever'] = $reciever;
-		$defaults['data'] = $data;
+		$this->defaults['reciever'] = $reciever;
+		$this->defaults['data'] = $data;
 	}
 
 	public function send(){
@@ -24,7 +23,7 @@ class EcisAlarm {
 			$defaults['reciever'],
 			[
 				'json' =>$defaults['data'],
-				'headers'	=> [
+				'headers'       => [
 					'Accept' => 'application/vnd.tosslab.jandi-v2+json',
 					'Content-Type' => 'application/json'
 				]
